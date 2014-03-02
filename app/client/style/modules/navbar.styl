@@ -1,0 +1,28 @@
+/* navbar module */
+.navbar
+  display table /* allow vertical centering */
+
+//navbar items
+.navbar-search
+  size(280px, 20px)
+  float left
+  padding 5px 8px
+  font-size 14px
+  background-color lighten(red, 15%)
+  color white
+  border none
+  border-radius 4px
+  fixed-mq(220px, 190px, 150px)
+.navbar-logo
+  size(auto, 26px)
+  float left
+  padding 21px 0
+.navbar-link
+  float right
+  margin-left 15px
+  font-size 18px
+  color white
+  text-decoration none
+  &:hover
+    color darken(white, 30%)
+

@@ -1,0 +1,1 @@
+SessionAmplify = _.extend({}, Session, {});

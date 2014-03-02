@@ -1,0 +1,35 @@
+<head>
+    <title> Meteor Scaffold </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+</head>
+
+<body> </body>
+
+<template name="layout">
+    <!-- navbar -->
+    <div id="l-header">
+        <div class="navbar l-fixed">
+            <!-- navbar logo -->
+            <a href="/"> <img class="navbar-logo" src="/images/logo.png"> </a>
+
+            <!-- navbar search -->
+            <div class="l-valign">
+                <input class="navbar-search" type="text" placeholder="Search">
+            </div>
+
+            <!-- navbar links -->
+            <div class="l-valign">
+                <a class="navbar-link" href="/"> Link 3 </a>
+                <a class="navbar-link" href="/"> Link 2 </a>
+                <a class="navbar-link no-margin" href="/"> Link 1 </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- pages are yielded into here -->
+    <div id="l-page">
+        {{yield}}
+    </div>
+</template>

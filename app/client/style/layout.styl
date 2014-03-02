@@ -1,0 +1,38 @@
+/* layout styles */
+#l-header
+  height 70px
+  background-color red
+  border-bottom 6px white solid
+  @media (max-width: 700px) /* s */
+    display none
+
+#l-sidenav, #l-content
+  height 1200px /* display only */
+  margin-top 25px
+  box-sizing border-box
+  background-color white
+
+#l-sidenav
+  width 240px
+  float left
+  background-color darken(white, 9%)
+  border-left solid darken(white, 50%) 1px
+
+#l-content
+  width 760px
+  float right
+  border-right solid darken(white, 50%) 1px
+  fixed-mq(580px, 510px, 440px)
+
+.l-fixed
+  size(screen-xl, 100%)
+  margin 0 auto
+  fixed-mq(screen-l, screen-m, screen-s)
+  @media (max-width: 700px) /* s */
+    width 100%
+  @media (max-width: 550px) /* xs */
+    text-align center
+
+.l-valign
+  display table-cell
+  vertical-align middle

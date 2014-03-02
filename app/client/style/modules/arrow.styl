@@ -1,0 +1,19 @@
+/* arrow module */
+.arrow
+  border-style solid
+  height 0px
+  width 0px
+
+//arrow types
+.arrow.left, .arrow.right
+  border-color transparent lighten(red, 20%)
+.arrow.down, .arrow.up
+  border-color lighten(red, 20%) transparent
+.arrow.left
+  border-width 10px 10px 10px 0px
+.arrow.right
+  border-width 10px 0px 10px 10px
+.arrow.down
+  border-width 10px 10px 0px 10px
+.arrow.up
+  border-width 0px 10px 10px 10px

@@ -1,0 +1,85 @@
+/* panel module */
+.panel
+  display table
+
+//panel heading types
+.panel.heading
+  size(100%, 45px)
+  background-color red
+  color white
+.panel.heading.light-red
+  background-color lighten(red, 20%)
+.panel.heading-list
+  size(100%, 40px)
+  background-color darken(white, 4%)
+  color black
+  border-bottom solid darken(white, 20%) 2px
+  cursor pointer
+.panel.heading-sub-list
+  size(100%, 32px)
+  margin 3px 0px
+  font-size 13px
+  background-color lighten(red, 85%)
+  color lighten(black, 20%)
+  cursor pointer
+
+//panel heading-list states
+.panel.heading-list.selected
+  color lighten(red, 30%)
+
+//panel body
+.panel.body
+  width 100%
+  display none
+  background-color white
+  border-bottom solid darken(white, 20%) 2px
+.panel.body.is-open
+  display table
+  padding 12px
+  box-sizing border-box
+
+//panel items
+.panel-chevron
+  float right
+  margin-right 20px
+  color darken(white, 40%)
+.panel-chevron.left
+  float left
+  margin-left 20px
+  font-size 18px
+  color darken(white, 40%)
+.panel-title-text
+  margin-left 15px
+  font-weight 900
+  text-transform capitalize
+.panel-icon
+  margin-left 15px
+  margin-top 8px
+  float left
+  padding 3px 6px
+  font-size 20px
+  cursor pointer
+  border 1px solid darken(red, 10%)
+.panel-icon.right
+  float right
+  margin-left 0px
+  margin-right 15px
+.panel-icon.text
+  margin-top 12px
+  margin-left 5px
+  font-size 14px
+  border none
+  @media (max-width: 770px) /* m */
+    display none
+.panel-vrule
+  size(1px, 28px)
+  float left
+  margin-left 15px
+  background-color darken(red, 10%)
+  border none
+.panel-sort
+  width 240px
+  float right
+  margin-right 15px
+  margin-top 12px
+  fixed-mq(220px, 160px, 140px)
